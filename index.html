@@ -91,6 +91,25 @@
 
   footer{padding:40px 0;text-align:center;color:var(--cream-dim);font-size:.9rem;border-top:1px solid rgba(253,244,227,.12)}
   footer a{margin:0 10px}
+  :root{--font:'Franklin Gothic Medium','Franklin Gothic','Arial Unicode MS',sans-serif}
+body,
+h1,h2,h3,
+.brand,
+.date b,
+.eyebrow,
+.price,
+.tag,
+nav a,
+.btn,button,
+input,select,textarea,
+.edit-card input,
+.admin-bar button,
+#admin-tools button,
+footer{
+  font-family:var(--font);
+}
+/* Franklin Gothic Medium has a single weight, so avoid browser-faked bold */
+h1,h2,h3,.date b{font-weight:400}
 </style>
 </head>
 <body>
