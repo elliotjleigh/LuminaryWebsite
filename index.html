@@ -116,7 +116,7 @@ h1,h2,h3,.date b{font-weight:400}
 /* Gallery: 1 col mobile, 2 tablet, 3 desktop */
 .gallery{display:grid;gap:14px;grid-template-columns:1fr}
 .gallery figure{margin:0;overflow:hidden;border-radius:var(--radius);border:1px solid rgba(253,244,227,.14);aspect-ratio:4/3;background:rgba(253,244,227,.06)}
-.gallery img.pos-bot{object-position:center bottom}
+.gallery img.pos-top{object-position:center bottom}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
 .gallery figure:hover img{transform:scale(1.05)}
 @media(min-width:600px){.gallery{grid-template-columns:repeat(2,1fr)}}
@@ -246,7 +246,7 @@ h1,h2,h3,.date b{font-weight:400}
       <figure><img src="Images/LuminarySign.jpeg" alt="The Luminary coffee trailer" loading="lazy"></figure>
       <figure><img src="Images/TrailerWithCustomers.jpeg" alt="Customers at the trailer" loading="lazy"></figure>
       <figure><img src="Images/Tamper_CoffeeGrinds.jpeg" alt="Tamper and Coffee Grounds" loading="lazy"></figure>
-      <figure><img class="pos-bot" src="Images/CoffeeMachine.jpeg" alt="Coffee machine" loading="lazy"></figure>
+      <figure><img class="pos-top" src="Images/CoffeeMachine.jpeg" alt="Coffee machine" loading="lazy"></figure>
       <figure><img src="Images/CoffeeBeans.jpeg" alt="Coffee Beans" loading="lazy"></figure>
       <figure><img src="Images/LuminaryHat.jpeg" alt="Luminary hat" loading="lazy"></figure>
     </div>
