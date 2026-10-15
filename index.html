@@ -323,5 +323,13 @@ h1,h2,h3,.date b{font-weight:400}
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
+  <script>
+  document.querySelectorAll('a[href="#contact"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      window.scrollTo({top: document.documentElement.scrollHeight, behavior: 'smooth'});
+    });
+  });
+</script>
 </body>
 </html>
