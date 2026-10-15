@@ -133,6 +133,11 @@ h1,h2,h3,.date b{font-weight:400}
   -webkit-mask-image:radial-gradient(ellipse at center,#000 55%,transparent 75%);
           mask-image:radial-gradient(ellipse at center,#000 55%,transparent 75%);
 }
+
+  /* Hero trailer photos, side by side */
+.hero-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:44px auto 0}
+.hero-photos img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin:0;border-radius:var(--radius);border:1px solid rgba(253,244,227,.14);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+@media(max-width:480px){.hero-photos{gap:10px;margin-top:32px}}
   
 </style>
 </head>
@@ -166,6 +171,10 @@ h1,h2,h3,.date b{font-weight:400}
       <p>Speciality coffee, served warm from our mobile trailer. Find us at markets, events and out and about.</p>
       <a class="btn" href="#locations">Find the trailer</a>
       <a class="btn ghost" href="#hire">Hire us</a>
+      <div class="hero-photos">
+  <img src="Images/CountrysideCoffeeTrailer.jpeg" alt="The Luminary coffee trailer" loading="lazy">
+  <img src="Images/LuminarySign.jpeg" alt="The Luminary coffee trailer serving customers" loading="lazy">
+</div>
     </div>
   </div>
 
