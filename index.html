@@ -113,6 +113,14 @@ footer{
 /* Franklin Gothic Medium has a single weight, so avoid browser-faked bold */
 h1,h2,h3,.date b{font-weight:400}
 
+/* Gallery: 1 col mobile, 2 tablet, 3 desktop */
+.gallery{display:grid;gap:14px;grid-template-columns:1fr}
+.gallery figure{margin:0;overflow:hidden;border-radius:var(--radius);border:1px solid rgba(253,244,227,.14);aspect-ratio:4/3;background:rgba(253,244,227,.06)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.gallery figure:hover img{transform:scale(1.05)}
+@media(min-width:600px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.gallery{grid-template-columns:repeat(3,1fr);gap:18px}}
+
 </style>
 </head>
 <body>
